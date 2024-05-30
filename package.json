@@ -1,0 +1,54 @@
+{
+	"name": "jiraRank",
+	"description": "Tool to generate a rank for a Jira backlog.",
+	"version": "0.0.1",
+	"private": false,
+	"author": {
+		"name": "Michael Pelikan",
+		"email": "mpelikan@jaby.com"
+	},
+	"copyright": {
+		"start": 2024
+	},
+	"contributors": [
+		{
+			"name": "Michael Pelikan",
+			"email": "mpelikan@jaby.com"
+		}
+	],
+	"licenses": [
+	],
+	"repository": {
+		"type": "git",
+		"url": "TBD"
+	},
+	"bugs": {
+		"url": "TBD"
+	},
+	"scripts": {
+		"reinstall": "rm -rf node_modules && rm -rf package-lock.json && npm install",
+		"reinstall-production": "npm ci",
+		"lint": "./node_modules/eslint/bin/eslint.js --fix.; exit 0;",
+		"test": "bash test.sh \\;"
+	},
+	"engines": {
+		"node": "~20",
+		"npm": "~10"
+	},
+	"dependencies": {
+		"async": "~3.2",
+		"commander": "~12.0",
+		"jira.js": "~3.0"
+	},
+	"devDependencies": {
+		"eslint": "~8.56",
+		"mocha": "~10.4",
+		"should": "~13.2",
+		"supertest": "~7.0"
+	},
+	"jira": {
+		"host": "",
+		"user": "",
+		"token": ""
+	}
+}
